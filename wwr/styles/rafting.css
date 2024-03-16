@@ -42,26 +42,26 @@ body {
 /* styles/rafting.css */
 
 /* Position the hero div */
-.hero {
+/* .hero {
     position: absolute;
-  }
+  } */
   
   /* Style the hero image */
-  .hero img {
+  /* .hero img {
     display: block;
     width: 100%;
     height: auto;
   }
-  
+   */
   /* Position the h1 heading absolutely */
-  .hero h1 {
+  /* .hero h1 {
     position: absolute;
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-   color:  var(--secondary-color);  /* Example color */
-  }
-  
+   /* color:  var(--secondary-color);  Example color
+  } */
+   */
   /* Position the article absolutely and style its background */
   .hero article {
     position: absolute;
@@ -79,3 +79,4 @@ body {
     margin-left: 10px;
   }
   
+  .hero { position: relative; text-align: center; } .hero img { display: block; width: 100%; height: auto; } .hero h1 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */ padding: 10px 20px; border-radius: 5px; }
