@@ -33,50 +33,135 @@ footer .sociallinks a {
     text-decoration: none;
 }
 
-/* Limiting page width */
+
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+}
+
+/* Set up basic styles */
 body {
-    max-width: 500px;
+    line-height: 1.6;
+    background-color: var(--accent1-color);
+}
+
+/* Header styles */
+header {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    padding: 10px 0;
+    
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
-/* styles/rafting.css */
+nav {
+    margin-top: 10px;
+}
 
-/* Position the hero div */
-/* .hero {
-    position: absolute;
-  } */
-  
-  /* Style the hero image */
-  /* .hero img {
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
-  }
-   */
-  /* Position the h1 heading absolutely */
-  /* .hero h1 {
+    
+}
+
+.hero h1 {
     position: absolute;
-    /* top: 50%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%); */
-   /* color:  var(--secondary-color);  Example color
-  } */
-   */
-  /* Position the article absolutely and style its background */
-  .hero article {
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: var(--accent1-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    font-family: var(--heading-font);
+    z-index: 2; /* Ensure the h1 is above the article */
+    
+}
+
+
+/* Article styles */
+article {
     position: absolute;
-    bottom: 10%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Example background color with opacity */
+    transform: translate(-50%, -50%);
+    max-width: 80%;
     padding: 20px;
-    color:  var(--secondary-color); /* Example color for text */
-  }
-  
-  /* Float the image inside the article to the right of the paragraph */
-  .hero article img {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    z-index: 1; /* Ensure the article is behind the h1 */
+    
+}
+
+article img {
     float: right;
-    margin-left: 10px;
-  }
-  
-  .hero { position: relative; text-align: center; } .hero img { display: block; width: 100%; height: auto; } .hero h1 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */ padding: 10px 20px; border-radius: 5px; }
+    margin-left: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+/* Social links styles */
+.sociallinks {
+    margin-top: 10px;
+}
+
+.sociallinks a {
+    margin: 0 5px;
+}
+
+/* Set the same size for all images in the nav */
+nav img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+}
