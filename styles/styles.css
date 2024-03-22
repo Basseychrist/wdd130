@@ -71,7 +71,7 @@ footer{
     text-align: center;
 }
 
-
+/* Class Selectors */
 .box{
    margin: 1rem;
    border: 1px solid rgba(0,0,0,.1);
@@ -80,4 +80,3 @@ footer{
    color: #000;
 }
 
-/* Class Selectors */
