@@ -47,12 +47,16 @@ body {
     background-color: var(--accent1-color);
 }
 
+
+
 /* Header styles */
 header {
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
     padding: 10px 0;
-    
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes auto width, navigation takes remaining space */
+    align-items: center; /* Center vertically */
 }
 
 header img {
@@ -61,14 +65,18 @@ header img {
     margin: 0 auto;
 }
 
+
+
 nav {
     margin-top: 10px;
+    justify-self: end;
 }
 
 nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     margin: 0 10px;
+    display:inline-block;
 }
 
 nav a:hover {
@@ -164,4 +172,10 @@ footer p {
 nav img {
     width: 50px; /* Adjust as needed */
     height: 50px; /* Adjust as needed */
+}
+
+/* Flex container for the header */
+header nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
 }
