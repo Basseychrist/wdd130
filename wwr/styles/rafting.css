@@ -53,10 +53,12 @@ body {
 header {
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
-    padding: 10px 0;
+    padding: 10px 20px;
     display: grid;
     grid-template-columns: auto 1fr; /* Logo takes auto width, navigation takes remaining space */
     align-items: center; /* Center vertically */
+    justify-content: space-between; /* Align items to the start and end of the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 header img {
@@ -70,6 +72,9 @@ header img {
 nav {
     margin-top: 10px;
     justify-self: end;
+    display: flex; /* Use flexbox for navigation links */
+    justify-content: flex-end; /* Align navigation links to the right */
+
 }
 
 nav a {
@@ -77,6 +82,9 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
     display:inline-block;
+    padding: 5px 10px; /* Add padding to make navigation links clickable */
+    border-radius: 5px; /* Add rounded corners to navigation links */
+    transition: background-color 0.3s; /* Add smooth transition for hover effect */
 }
 
 nav a:hover {
@@ -95,6 +103,7 @@ main {
     text-align: center;
     margin-bottom: 20px;
 }
+
 
 .hero img {
     display: block;
@@ -156,7 +165,7 @@ footer {
 
 
 footer p {
-    margin: 0;
+    margin: 10px;  
 }
 
 /* Social links styles */
@@ -178,4 +187,34 @@ nav img {
 header nav {
     display: flex;
     justify-content: flex-end; /* Align items to the right */
+}
+
+
+
+/* History section styles */
+section.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    gap: 20px; /* Gap between columns */
+    margin-bottom: 20px;
+}
+
+.history img {
+    max-width: 100%;
+    height: auto;
+}
+
+.history-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.history p {
+    color: var(--secondary-color);
 }
