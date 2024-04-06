@@ -168,6 +168,7 @@ footer {
 
 footer p {
     margin: 10px;
+    color: #EDE7D9;
     
 }
 
@@ -231,17 +232,32 @@ header nav {
 }
 .company-info, .employee-profiles, .contact-form {
     margin-bottom: 20px;
+    
 }
 
+.contact-form{
+    padding-top: 40px;
+}
+
+
+
+.all-emloyees{
+
+    display:flex;
+    flex-flow: row;
+}
 
 
 .employee {
     margin-bottom: 10px;
+    
+    
 }
 
-.employee img {
-    max-width: fit-content;
-    border-radius: inherit;
+.employee, img {
+    width: 100%;
+    height: 150px;
+    margin: 20px;
 }
 
 .contact-form label {
@@ -272,4 +288,19 @@ header nav {
 
 .contact-form input[type="submit"]:hover {
     background-color: #555;
+}
+
+.company-info, p{
+    color: #0a0a0a;
+}
+
+.link-to-wireframe, a{
+   color: #EDE7D9;
+  
+
+}
+
+.link-to-wireframe, a:hover{
+   
+color: var(--nav-hover-link-color);
 }
