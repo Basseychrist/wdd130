@@ -227,7 +227,8 @@ header nav {
 .adventure figure img {
     max-height: 100px;
     width: 120px;
-    margin-left: -7px;
+    margin-left: -10px;
+
     
 }
 .company-info, .employee-profiles, .contact-form {
@@ -254,7 +255,7 @@ header nav {
     
 }
 
-.employee, img {
+.employee img {
     width: 100%;
     height: 150px;
     margin: 20px;
@@ -290,7 +291,7 @@ header nav {
     background-color: #555;
 }
 
-.company-info, p{
+.company-info p{
     color: #0a0a0a;
 }
 
@@ -304,3 +305,119 @@ header nav {
    
 color: var(--nav-hover-link-color);
 }
+
+/* 
+
+
+/* Trip Table Section styles */
+.trip-table {
+    padding: 1rem;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+}
+
+.trip-table tbody tr td a:hover {
+    background-color:white;
+    color: #333;
+}
+
+.trip-table tbody tr td a {
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: var(--nav-background-color);
+}
+
+
+
+
+/* CTA Section styles */
+.cta {
+    color: var(--nav-link-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    margin-bottom: 1rem;
+}
+
+.cta .button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta .button:hover {
+    background-color: black;
+    color:#fff ;
+}
+
+
+/* trip image decription section */
+.hero-trip{
+    padding: 1rem;
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+}
+
+/* trip image decription section */
+
+.hero-trip h2{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+
+.hero-trip h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-heading h1{
+text-align: center;
+margin-bottom: 1rem;
+margin-top: 0.5rem;
+
+}
+.hero-trip img {
+height: 150px;
+width: 150px%;
+align-items: center;
+
+}
+
+.hero-trip a {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px ;
+    background-color: #161615;
+}
+
+.hero-trip a:hover {
+    background-color:white ;
+    color:black ;
+} 
