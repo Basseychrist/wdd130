@@ -256,9 +256,10 @@ header nav {
 }
 
 .employee img {
-    width: 100%;
+    width: 250px;
     height: 150px;
     margin: 20px;
+    gap: 1em;
 }
 
 .contact-form label {
@@ -393,7 +394,7 @@ color: var(--nav-hover-link-color);
 
 .hero-trip h1{
     text-align: center;
-    margin-bottom: 2rem;
+   
 }
 
 .hero-heading h1{
@@ -403,21 +404,30 @@ margin-top: 0.5rem;
 
 }
 .hero-trip img {
-height: 150px;
-width: 150px%;
-align-items: center;
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+position: relative;
 
 }
 
 .hero-trip a {
     color: white;
     text-decoration: none;
-    text-align: left;
+    position: absolute;
     border-radius: 5px ;
     background-color: #161615;
+    justify-content: center;
+    
 }
 
 .hero-trip a:hover {
     background-color:white ;
     color:black ;
 } 
+
+.hero-trip article p{
+color: black;
+background-color: white;
+
+}
