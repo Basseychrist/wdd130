@@ -315,6 +315,11 @@ color: var(--nav-hover-link-color);
     padding: 1rem;
 }
 
+.trip-table h2 {
+    text-align: center;
+}
+
+
 .trip-table table {
     width: 100%;
     border-collapse: collapse;
@@ -386,13 +391,13 @@ color: var(--nav-hover-link-color);
 
 /* trip image decription section */
 
-.hero-trip h2{
-    text-align: left;
-    margin-bottom: 2rem;
+.hero-heading h2{
+    text-align: center;
+    
 }
 
 
-.hero-trip h1{
+.hero-trip h2{
     text-align: center;
    
 }
@@ -432,7 +437,11 @@ background-color: white;
 
 }
 
-
+.hero-trip article p{
+    color: black;
+    background-color: white;
+    
+    }
 
 
 
